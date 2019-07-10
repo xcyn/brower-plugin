@@ -1,0 +1,45 @@
+{
+    "name": "换肤功能",
+    "description" : "相当于是一个hello word的demo， 用于浏览器换肤",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "用于浏览器换肤",
+        "default_popup": "./index.html",
+		"default_icon": "img/icon.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "MacCtrl+Shift+E"
+            },
+            "description": "按键快捷打开"
+        }
+    },
+	"content_scripts": 
+	[
+		{
+			"matches": ["<all_urls>"],
+			"js": ["./index.js"],
+			"run_at": "document_end"
+		}
+    ],
+	"permissions":
+	[
+		"contextMenus",
+		"tabs",
+		"notifications",
+		"webRequest",
+		"webRequestBlocking",
+		"storage",
+		"http://*/*",
+		"https://*/*"
+	],
+	"icons":
+	{
+		"16": "img/icon.png",
+		"48": "img/icon.png",
+		"128": "img/icon.png"
+	}
+  }
