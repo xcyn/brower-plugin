@@ -1,15 +1,14 @@
 ## 描述
 ```
-用于浏览器换肤的插件
+浏览器插件学习
 ```
-## 关键功能记录
+## 目标
 ```
-1、content_scripts 需要直接注入页面的JS
-2、background 一个常驻的页面，它的生命周期是插件中所有类型页面中最长的，它随着浏览器的打开而打开，随着浏览器的关闭而关闭，所以通常把需要一直运行的、启动就运行的、全局的代码放在background里面
-3、default_popup 用于菜单的操作洁面
-4、permissions 希望chrome赋予你什么浏览器权限
+1、实现前端自动化测试
+2、通过工具解放团队问题
 ```
 ## 参考学习地址
 ```
 https://github.com/sxei/chrome-plugin-demo
+https://www.cnblogs.com/liuxianan/p/chrome-plugin-develop.html
 ```
